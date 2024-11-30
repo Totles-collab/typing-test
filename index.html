@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" loop autoplay>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Glittering Image -->
+    <div class="ai-generated-7957988_1920.jpg"></div>
+
+    <!-- Moving Text -->
+    <div class="moving-text">
+        <p>Welcome to the Typing Speed Test! Type the passage as quickly as you can, and see your WPM and accuracy!</p>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Typing Speed Test</h1>
+            <p>one minute</p>
+        </div>
+        <div class="test-area">
+            <div class="passage">
+                <p id="passage-text">Press START TEST button & Start typing the following passage.</p>
+            </div>
+            <textarea id="user-input" placeholder="Start typing here..." oninput="checkTyping()" disabled></textarea>
+        </div>
+        <div class="stats">
+            <div id="timer" class="timer">60</div>
+            <div id="wpm" class="wpm">WPM: 0</div>
+            <div id="accuracy" class="accuracy">Accuracy: 100%</div>
+        </div>
+        <div class="footer">
+            <button id="start-btn" onclick="startTest()">Start Test</button>
+        </div>
+    </div>
+
+    <!-- Music Control Button -->
+    <button onclick="toggleMusic()">Toggle Music</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
